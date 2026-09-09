@@ -1,8 +1,6 @@
 {
   "compilerOptions": {
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
-    "resolvePackageJsonExports": true,
+    "module": "commonjs",
     "esModuleInterop": true,
     "isolatedModules": true,
     "declaration": true,
@@ -14,6 +12,7 @@
     "types": ["node", "jest"],
     "sourceMap": true,
     "outDir": "./dist",
+    "rootDir": "./src",
     "paths": {
       "@/*": ["./src/*"]
     },
@@ -22,5 +21,7 @@
     "strict": true,
     "strictPropertyInitialization": false,
     "resolveJsonModule": true,
-  }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "test"]
 }
