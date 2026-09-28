@@ -13,7 +13,7 @@ export class UserRules {
   @MaxLength(255)
   @IsString()
   @IsNotEmpty()
-  name: string;
+  name: string | null;
 
   @MaxLength(255)
   @IsString()
